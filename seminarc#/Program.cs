@@ -1,4 +1,9 @@
-﻿Console.Write("Ener number : ");
+﻿///нахождение квадратного корня
+
+
+
+
+Console.Write("Ener number : ");
 string strNum = Console.ReadLine();
 int num = int.Parse(strNum);
 
