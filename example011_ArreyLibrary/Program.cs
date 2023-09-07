@@ -47,5 +47,5 @@ arrey[6] = 4;
 PrintArrey(arrey);
 Console.WriteLine();
 
-int pos = Indexof(arrey, 444);
+int pos = Indexof(arrey, 5);
 Console.WriteLine(pos);
