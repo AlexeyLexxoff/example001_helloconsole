@@ -1,4 +1,8 @@
-﻿System.Console.WriteLine("Введите число: ");
+﻿// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел
+// от 1 до N.
+
+
+System.Console.WriteLine("Введите число: ");
 string number = System.Console.ReadLine();
 int num1 = int.Parse(number);
 
