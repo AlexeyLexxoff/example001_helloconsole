@@ -4,35 +4,25 @@
 // [1,0,1,1,0,1,0,0]
 
 
-// void Arrey(int[] collection)
-// {
-//     int length = collection.Length;
-//     int index = 0;
-//     while (index < length)
-//     {
-//         collection[index] = new Random().Next(0, 1);
-//         index++;
-//     }
-
-// }
 
 
 int[] GetArrey(int size, int min, int max)
 {
     int[] arrey = new int[size];
     Random rand = new Random();
-    for (int index = 0; index < size; i++)
+    for (int index = 0; index < size; index++)
     {
-        array[index] = rand.Next(min, max + 1);
+        arrey[index] = rand.Next(min, max + 1);
     }
     return arrey;
 }
 
-void Print(int[]arr);
+void Print(int[]arr)
 {
     int length = arr.Length;
     for (int i = 0; i < length; i++)
     {
-        System.Console.WriteLine($" {arr[i]} ");
+        System.Console.Write($" {arr[i]} ");
     }
 }
+Print(GetArrey(8, 0, 1));
