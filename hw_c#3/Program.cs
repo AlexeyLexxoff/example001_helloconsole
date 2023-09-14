@@ -74,8 +74,8 @@
 // }
 
 
-csharp
-using System;
+
+
 
 public class Answer
 {
@@ -83,7 +83,7 @@ public class Answer
     {
         if (pointA.Length != 3 || pointB.Length != 3)
         {
-            throw new ArgumentException("Invalid number of coordinates. Expected 3 coordinates for each point.");
+            throw new ArgumentException("Неверное количество координат. Используйте 3 координаты.");
         }
 
         int x1 = pointA[0];
