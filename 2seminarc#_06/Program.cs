@@ -7,8 +7,8 @@ if (num < 100 || num > 999)
 }
 else
 {
-   // int num1 = num % 10;
-   // num = num - num1;
+    // int num1 = num % 10;
+    // num = num - num1;
     int num2 = (num % 100) / 10;
     System.Console.WriteLine($"Вторая цифра: {num2}");
 }
