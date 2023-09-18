@@ -25,4 +25,4 @@ void Print(int[]arr)
         System.Console.Write($" {arr[i]} ");
     }
 }
-Print(GetArrey(8, 0, 1));
+Print(GetArrey(8, 1, 9));
