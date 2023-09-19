@@ -58,3 +58,5 @@ int number2 = GetNumber(" - верхняя граница :");
 
 
 System.Console.WriteLine($"\t Количество элементов в диапазоне [{number1}, {number2}] равно {GetCount(arr, number1, number2)}");
+
+
