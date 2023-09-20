@@ -25,7 +25,7 @@ int[] GetArrey(int size, int min, int max)
     return array;
 }
 
-void Revert(int[] array)
+void Reverse(int[] array)
 {
     for (int i = 0; i < array.Length / 2; i++)
     {
@@ -35,7 +35,7 @@ void Revert(int[] array)
     }
 
 }
-int[] array = GetArrey(5, 1, 50);
+int array = GetArrey (5, 1, 50)
 System.Console.WriteLine(string.Join (" ", array));
-Revert(array);
-System.Console.WriteLine(string.Join (" ", array));
+Reverse (array)
+System.Console.WriteLine($"");

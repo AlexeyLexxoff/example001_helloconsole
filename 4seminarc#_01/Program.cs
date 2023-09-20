@@ -21,9 +21,9 @@ int GetSum(int num)
     }
     return sum;
 }
-// int numA = GetNumber("A");
-// int sum = GetSum(numA);
-// System.Console.WriteLine($"sum = {sum}");
+int numA = GetNumber("A");
+int sum = GetSum(numA);
+System.Console.WriteLine($"sum = {sum}");
 
 int num = 10;
 int num2 = num++;// num2 = 10; num = 10 + 1 = 11.

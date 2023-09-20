@@ -1,10 +1,10 @@
 ﻿//метод введения id
- 
+
 int GetNumber(string message)
 {
     System.Console.WriteLine($"Enterr number {message} : ");
-int num = Convert.ToInt32(System.Console.ReadLine());
-return num;    
+    int num = Convert.ToInt32(System.Console.ReadLine());
+    return num;
 }
 
 void Show(int x, int y)
