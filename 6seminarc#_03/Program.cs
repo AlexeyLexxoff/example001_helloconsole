@@ -14,18 +14,19 @@ int[] FillArray(int size, int min, int max)
     return array;
 }
 int[] array = FillArray(8, 1, 10);
-System.Console.WriteLine(string.Join(", ", array));
+
 
 int[] CopyArray(int[] array)
 {
     int[] array2 = new int[array.Length];
     for (int i = 0; i < array2.Length; i++)
     {
-        array2[i] = array[i];
-        
+        array2[i] = array[i] * 2;
+
     }
     return array2;
 }
 int[] array2 = CopyArray(array);
-System.Console.WriteLine(string.Join(" ,", array2));
+System.Console.WriteLine(string.Join(", ", array2));
+System.Console.WriteLine(string.Join(" ,", array));
 
