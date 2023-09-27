@@ -1,6 +1,4 @@
-﻿// Задача 49: Задайте двумерный массив. Найдите элементы, у
-// которых оба индекса чётные, и замените эти элементы на их
-// квадраты.
+﻿// Задача 51: Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
 
 int[,] GetMatrix(int rows, int columns, int min = 0, int max = 9)
 {
@@ -29,29 +27,35 @@ void PrintMatrix(int[,] matrix)
     {
         for (int l = 0; l < matrix.GetLength(1); l++)
         {
+            if (i == l) Console.ForegroundColor = ConsoleColor.Green;
+            else Console.ForegroundColor = ConsoleColor.Red;
             Console.Write($"{matrix[i, l]} ");
         }
         Console.WriteLine();
     }
 }
 
-void GetMatrixSqr(int[,] matrix)
+int GetMatrixSum(int[,] matrix)
 {
+    int sum = 0;
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int l = 0; l < matrix.GetLength(1); l++)
         {
-            if ((i % 2 == 0) && (l % 2 == 0)) matrix[i, l] *= matrix[i, l];
+            if (i == l) sum += matrix[i,l];
         }
     }
+    return sum;
 }
 
 
 
 int rows = SetNumber("- количество строк");
 int columns = SetNumber("- количество столбцов");
+
 int[,] result = GetMatrix(rows, columns);
+
 PrintMatrix(result);
+
 System.Console.WriteLine();
-GetMatrixSqr(result);
-PrintMatrix(result);
+System.Console.WriteLine(GetMatrixSum(result));
